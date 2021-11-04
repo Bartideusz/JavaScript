@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset = "UTF-8">
+    </head>
+    <body>
+        <script>
+            tab = [1,2,3]
+            document.write(tab[0] + ' ')
+            document.write(tab[1] + '<br>')
+            tab[1] = 45
+            for (i = 0; i < tab.length; i++){
+                document.write(tab[i] + ' ')
+            }
+            tab[3] = 55
+            document.write('<br>')
+            for(i = 0; i < tab.length; i++){
+                document.write(tab[i]+ ' ')
+            }
+            tab.push(4)
+            tab.pop()
+            tab.shift()
+            tab.unshift(12)
+            document.write('<br>')
+            for (i = 0; i < tab.length; i++){
+                document.write(tab[i]+' ')
+            }
+            document.write('<br>'+'<br>')
+            tabA = [80, 8, 48]
+            tabB = ['kot', 'pies']
+            newTab = tabA.concat(tabB)
+            document.write(newTab + '<br>')
+            document.write(tabA.reverse() + '<br>')
+            document.write(newTab.slice(2) + '<br>')
+            document.write('<br>'+'<br>')
+            function mySort(a, b){
+                return a-b;
+            }
+            arr = [1, 42, 5, 21, 3, 9];
+            arr.sort(mySort);
+            document.write(arr);
+        </script>
+    </body>
+</html>
